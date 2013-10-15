@@ -5,7 +5,7 @@ import org.lwjgl.opengl.PixelFormat
 import org.lwjgl.opengl.DisplayMode
 import org.lwjgl.opengl.ContextAttribs
 
-object GraphicsEngine {
+object GraphicsMain {
   trait Lifecycle {
     def setup()
     def destroy()
@@ -36,9 +36,9 @@ object GraphicsEngine {
       println("setup renderer")
       try {
         val pixelFormat = new PixelFormat();
-        val contextAtrributes = new ContextAttribs(3, 2)
-          .withForwardCompatible(true)
-          .withProfileCore(true);
+        val contextAtrributes = (new ContextAttribs(3, 2))
+        .withForwardCompatible(true)
+        .withProfileCore(true);
 
         display.setDisplayMode(new DisplayMode(WIDTH, HEIGHT));
         display.setTitle("Test");
