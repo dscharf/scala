@@ -18,6 +18,7 @@ object grre {
   var vboId = 0
   var vertexCount = 0
 
+  
   def main(args: Array[String]) {
 
     setupOpengl
