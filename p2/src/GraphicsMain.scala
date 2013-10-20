@@ -14,10 +14,11 @@ object GraphicsMain {
   trait Runnable {
     def run(): Boolean
   }
-
+ 
   trait Runstep {
     def step(time: Float)
   }
+  
 
   trait Renderable {
     type Graphics <: GraphicsLike

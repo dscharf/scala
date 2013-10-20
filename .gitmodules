@@ -1,0 +1,3 @@
+[submodule "m1"]
+	path = m1
+	url = https://github.com/dscharf/scala.git
