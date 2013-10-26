@@ -13,9 +13,9 @@ package object graphics {
   def main(args: Array[String]) {
 	val app = new App with OpenglApi
 	
-    //app.setupOpengl
-    //app.setupQuads
-    //while (app.run) {}
+    app.setupOpengl
+    app.setupQuads
+    while (app.run) {}
     
   }
 

@@ -14,8 +14,8 @@ import java.nio.FloatBuffer
 package graphics {
 
   trait OpenglApi extends GraphicsApi {
-    def display = new Display
-    def graphics = new Graphics
+    def display = new Display()
+    def graphics = new Graphics()
  
     class Display extends DisplayLike {
       def isCloseRequested: Boolean = Display.isCloseRequested()
@@ -52,7 +52,6 @@ package graphics {
 
       // Put everything back to default (deselect)
       def glDisableVertexAttribArray(id: Int) = GL20.glDisableVertexAttribArray(id);
-
     }
   }
 
